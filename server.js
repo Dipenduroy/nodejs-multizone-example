@@ -52,8 +52,8 @@ app.use(require('pino-http')({logger: pino}));
 
 app.get('/', (req, res) => {
   // Use req.log (a `pino` instance) to log JSON:
-  req.log.info({message: 'Enabled failover : Hello from Node.js Starter Backup Application!'});
-  res.send('Enabled failover : Hello from Node.js Starter Backup Application!');
+  req.log.info({message: 'Hello from Node.js Starter Backup Application!'});
+  res.send('Hello from Node.js Starter Backup Application!');
 });
 
 app.get('*', (req, res) => {
